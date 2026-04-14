@@ -58,7 +58,9 @@ def check_spy_gate() -> SpyGateResult:
     if df is None or df.empty:
         logger.warning("SPY data unavailable — defaulting gate to OPEN (fail-safe)")
         return SpyGateResult(gate_open=True)
-
+    
+    if isinstance(df.columns, pd.MultiIndex):
+    df.columns = df.columns.droplevel(1)
     close = df["Close"]
     ema = close.ewm(span=SPY_EMA_PERIOD, adjust=False).mean()
 
