@@ -1,0 +1,7 @@
+# requirements.txt — Swing Scanner v1.1
+# IDENTICAL to v1.0 (data layer is frozen)
+yfinance>=0.2.40
+pandas>=2.0.0
+numpy>=1.26.0
+requests>=2.31.0
+pytest>=8.0.0

@@ -1,0 +1,6 @@
+{
+  "_comment": "Manual veto list. Add tickers that keep generating false signals.",
+  "_format": "{\"TICKER\": {\"vetoed_until\": \"YYYY-MM-DD\", \"reason\": \"description\"}}",
+  "_example": "\"PLTR\": {\"vetoed_until\": \"2026-04-20\", \"reason\": \"3x miss\"}",
+  "_instructions": "See README section 'Ticker Veto System' for full usage guide."
+}

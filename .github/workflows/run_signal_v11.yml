@@ -1,0 +1,81 @@
+name: Swing Signal v1.1
+
+# -----------------------------------------------------------------------
+# CHANGE: Separate workflow file for v1.1 (run_signal_v11.yml).
+# Uses V11_TELEGRAM_BOT_TOKEN and V11_TELEGRAM_CHAT_ID so v1.0 and v1.1
+# alerts go to DIFFERENT Telegram channels for A/B evaluation.
+# Schedule is IDENTICAL to v1.0: weekdays 09:00 UTC and 20:00 UTC.
+# -----------------------------------------------------------------------
+
+on:
+  schedule:
+    # Weekdays at 09:00 UTC (pre-market US)
+    - cron: "0 9 * * 1-5"
+    # Weekdays at 20:00 UTC (post-market US)
+    - cron: "0 20 * * 1-5"
+  workflow_dispatch:  # allow manual trigger from GitHub Actions UI
+
+jobs:
+  run-scanner:
+    name: Run Swing Scanner v1.1
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      # ----------------------------------------------------------------
+      # 1. Checkout
+      # ----------------------------------------------------------------
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ----------------------------------------------------------------
+      # 2. Set up Python
+      # ----------------------------------------------------------------
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      # ----------------------------------------------------------------
+      # 3. Install dependencies
+      # ----------------------------------------------------------------
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # ----------------------------------------------------------------
+      # 4. Run scanner
+      # ----------------------------------------------------------------
+      - name: Run Swing Scanner v1.1
+        env:
+          V11_TELEGRAM_BOT_TOKEN: ${{ secrets.V11_TELEGRAM_BOT_TOKEN }}
+          V11_TELEGRAM_CHAT_ID: ${{ secrets.V11_TELEGRAM_CHAT_ID }}
+        run: |
+          python main.py
+
+      # ----------------------------------------------------------------
+      # 5. Upload daily log as artifact (30-day retention)
+      # ----------------------------------------------------------------
+      - name: Upload daily log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: swing-log-v11-${{ github.run_id }}
+          path: logs/v1.1/
+          retention-days: 30
+
+      # ----------------------------------------------------------------
+      # 6. Commit log file back to repo (optional: tracks history)
+      # ----------------------------------------------------------------
+      - name: Commit log to repo
+        if: always()
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add logs/v1.1/ sent_signals.json || true
+          git diff --staged --quiet || git commit -m "chore: v1.1 daily log $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push || true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
