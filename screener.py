@@ -59,7 +59,8 @@ def check_spy_gate() -> SpyGateResult:
         logger.warning("SPY data unavailable — defaulting gate to OPEN (fail-safe)")
         return SpyGateResult(gate_open=True)
     
-    df = df.xs("SPY", axis=1, level=1) if isinstance(df.columns, pd.MultiIndex) else df
+    if isinstance(df.columns, pd.MultiIndex):
+        df = df.droplevel(1, axis=1)
     close = df["Close"]
     ema = close.ewm(span=SPY_EMA_PERIOD, adjust=False).mean()
 

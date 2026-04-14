@@ -38,7 +38,7 @@ def _fetch_with_retry(tickers: list[str], period: str, interval: str = "1d") -> 
                 ticker = tickers[0]
                 if not raw.empty:
                     if isinstance(raw.columns, pd.MultiIndex):
-                        raw.columns = raw.columns.droplevel(1)
+                        raw.columns = raw.columns.droplevel(0)
                     results[ticker] = raw
                 else:
                     results[ticker] = None
