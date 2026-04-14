@@ -466,6 +466,12 @@ def run() -> None:
 
     confirmed_count = sum(1 for r in log_records if r.get("alert_sent") and "confirmed" in r.get("volume_tier", ""))
     watchlist_count = sum(1 for r in log_records if r.get("alert_sent") and "watchlist" in r.get("volume_tier", ""))
+    if confirmed_count == 0 and watchlist_count == 0 and spy_gate.gate_open:
+        from notifier import _send_telegram
+        top_3 = sorted(log_records, key=lambda x: x.get("score", 0), reverse=True)[:3]
+        top_str = ", ".join(f"{r['ticker']} ({r.get('score',0)})" for r in top_3 if r.get("ticker"))
+        _send_telegram(f"📭 *No recommendations today* — {today}\n\nNo signals met all entry criteria.\nTop setups (not actionable): {top_str}\n\n_SwingScanner v1.1 | Not financial advice_")
+    watchlist_count = sum(1 for r in log_records if r.get("alert_sent") and "watchlist" in r.get("volume_tier", ""))
     logger.info(
         f"=== Run complete: {confirmed_count} confirmed alerts, "
         f"{watchlist_count} watchlist alerts, "
