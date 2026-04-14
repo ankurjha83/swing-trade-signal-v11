@@ -21,18 +21,42 @@ CHANGELOG = {
 # ---------------------------------------------------------------------------
 # Watchlist (identical to v1.0 — do not change without parallel v1.0 update)
 # ---------------------------------------------------------------------------
-WATCHLIST = [
-    # Cybersecurity
-    "CRWD", "PLTR", "NET", "PANW", "ZS", "OKTA",
-    # Semiconductors
-    "NVDA", "AMD", "MU", "QCOM", "TSM", "COHR",
-    # Cloud
-    "SHOP", "SNOW", "DDOG",
-    # Space
-    "RKLB", "ASTS", "MNTS",
-    # Large-cap tech / growth
-    "MSFT", "META", "GOOGL", "AMZN",
+WATCHLIST_GOOGLE_SHEET_URL = "https://docs.google.com/spreadsheets/d/1yxmvO8ohAxkVspojw8PZoc3PwV5OEcEGu7AMiTL-Njc/export?format=csv&gid=0"
+
+WATCHLIST_FALLBACK = [
+    "CRWD", "PLTR", "NET", "NVDA", "AMD", "MU",
+    "QCOM", "TSM", "COHR", "SHOP", "RKLB",
+    "MSFT", "META", "GOOGL", "AMZN", "NFLX",
 ]
+
+def load_watchlist():
+    import requests, logging
+    logger = logging.getLogger(__name__)
+    SKIP_HEADERS = {"TICKER", "SYMBOL", "NAME", "STOCK"}
+    SKIP_SECTORS = {"—", "-", "", "n/a"}
+    try:
+        resp = requests.get(WATCHLIST_GOOGLE_SHEET_URL, timeout=10)
+        resp.raise_for_status()
+        lines = resp.text.strip().splitlines()
+        tickers = []
+        sheet_sector_map = {}
+        for line in lines:
+            cols = line.split(",")
+            ticker = cols[0].strip().strip('"').upper()
+            sector = cols[1].strip().strip('"').lower() if len(cols) > 1 else ""
+            if ticker and ticker.isalpha() and ticker not in SKIP_HEADERS and len(ticker) <= 5:
+                tickers.append(ticker)
+                if sector and sector not in SKIP_SECTORS:
+                    sheet_sector_map[ticker] = sector
+        if tickers:
+            logger.info(f"Watchlist loaded: {len(tickers)} tickers")
+            return tickers, sheet_sector_map
+        raise ValueError("Empty ticker list")
+    except Exception as exc:
+        logger.warning(f"Google Sheet fetch failed ({exc}) — using fallback")
+        return WATCHLIST_FALLBACK, {}
+
+WATCHLIST, SHEET_SECTOR_MAP = load_watchlist()
 
 # ---------------------------------------------------------------------------
 # RSI thresholds  (CHANGE 6: upper ceiling raised 65 → 70)
