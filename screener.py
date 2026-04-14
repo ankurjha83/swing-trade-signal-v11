@@ -60,7 +60,7 @@ def check_spy_gate() -> SpyGateResult:
         return SpyGateResult(gate_open=True)
     
     if isinstance(df.columns, pd.MultiIndex):
-    df.columns = df.columns.droplevel(1)
+        df.columns = df.columns.droplevel(1)
     close = df["Close"]
     ema = close.ewm(span=SPY_EMA_PERIOD, adjust=False).mean()
 
