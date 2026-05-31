@@ -1,20 +1,6 @@
 # Long-Term Accumulation Scanner
 
-This patch adds a separate long-term accumulation scanner to `swing-trade-signal-v11`.
-
-It does not replace the current swing scanner.
-
-## New files
-
-```text
-long_term_fetcher.py
-long_term_scorer.py
-sentiment_analyzer.py
-long_term_notifier.py
-main_long_term.py
-.github/workflows/long-term-accumulation.yml
-README_LONG_TERM.md
-```
+This repo now runs a long-term accumulation scanner instead of the old swing-trading scanner.
 
 ## Scoring
 
@@ -27,24 +13,43 @@ Technical     5
 Total       100
 ```
 
+## Quality score
+
+```text
+Revenue Growth      15
+Free Cash Flow      10
+Gross Margin        10
+ROE                  5
+Market Leadership   10
+```
+
+## Valuation score
+
+```text
+PEG                15
+Forward P/E        10
+Price/Sales         5
+```
+
 ## Run locally
 
 ```bash
-python main_long_term.py
+pip install -r requirements.txt
+python main.py
 ```
 
-## Telegram secrets
+## GitHub Actions
 
-Uses the same secrets as v11:
+The workflow runs weekly and can be triggered manually from the Actions tab.
+
+## Telegram secrets
 
 ```text
 V11_TELEGRAM_BOT_TOKEN
 V11_TELEGRAM_CHAT_ID
 ```
 
-## Output
-
-Logs are written to:
+## Logs
 
 ```text
 logs/long_term/YYYY-MM-DD.json

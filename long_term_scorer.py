@@ -1,9 +1,9 @@
 """
 long_term_scorer.py
 
-Scores long-term accumulation candidates.
+Long-term accumulation score.
 
-Mechanism:
+Scoring:
     Quality      50
     Valuation    30
     Discount     15
@@ -232,21 +232,37 @@ def score_technical(latest: pd.Series, previous: pd.Series) -> tuple[int, dict]:
 
     if rsi is not None and 35 <= rsi <= 60:
         score += 1
+
     if macd is not None and prev_macd is not None and macd >= prev_macd:
         score += 1
+
     if close is not None and ema20 is not None and close >= ema20:
         score += 1
+
     if close is not None and sma200 is not None and close >= sma200 * 0.80:
         score += 1
+
     if rebound >= 0.05:
         score += 1
 
     return min(score, 5), {
         "technical": {
             "rsi": rsi,
-            "macd_stabilizing": macd is not None and prev_macd is not None and macd >= prev_macd,
-            "above_ema20": close is not None and ema20 is not None and close >= ema20,
-            "not_broken_vs_sma200": close is not None and sma200 is not None and close >= sma200 * 0.80,
+            "macd_stabilizing": (
+                macd is not None
+                and prev_macd is not None
+                and macd >= prev_macd
+            ),
+            "above_ema20": (
+                close is not None
+                and ema20 is not None
+                and close >= ema20
+            ),
+            "not_broken_vs_sma200": (
+                close is not None
+                and sma200 is not None
+                and close >= sma200 * 0.80
+            ),
             "rebound_from_3m_low": rebound,
             "points": score,
             "max": 5,
@@ -257,16 +273,22 @@ def score_technical(latest: pd.Series, previous: pd.Series) -> tuple[int, dict]:
 def classify_score(total: int, sentiment_score: float, drawdown_52w: float) -> tuple[str, str, str]:
     if sentiment_score <= -0.50:
         return "Blocked", "Negative news flow — manual review required", "High"
+
     if drawdown_52w >= 0.60:
         return "Blocked", "Severe drawdown — possible structural break", "High"
+
     if total >= 85:
         return "A", "Aggressive accumulation candidate", "Medium"
+
     if total >= 75:
         return "B", "Strong accumulation candidate", "Medium"
+
     if total >= 65:
         return "C", "Gradual accumulation candidate", "Medium-High"
+
     if total >= 55:
         return "Watch", "Watchlist only", "Medium-High"
+
     return "Avoid", "No action", "High"
 
 

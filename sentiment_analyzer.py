@@ -1,10 +1,9 @@
 """
 sentiment_analyzer.py
 
-Lightweight news sentiment module.
+Simple latest-news sentiment analyzer.
 
-No external API key required.
-Uses simple keyword scoring on latest yfinance news.
+This is a keyword-based model, intentionally conservative.
 """
 
 from __future__ import annotations
@@ -31,14 +30,17 @@ def score_text(text: str) -> float:
         return 0.0
 
     lower = text.lower()
+
     positive_hits = sum(1 for word in POSITIVE_KEYWORDS if word in lower)
     negative_hits = sum(1 for word in NEGATIVE_KEYWORDS if word in lower)
+
     total_hits = positive_hits + negative_hits
 
     if total_hits == 0:
         return 0.0
 
     raw = (positive_hits - negative_hits) / total_hits
+
     return max(-1.0, min(1.0, raw))
 
 
@@ -60,6 +62,7 @@ def analyze_news_sentiment(news_items: list[dict]) -> dict:
         title = item.get("title", "") or ""
         summary = item.get("summary", "") or ""
         text = f"{title}. {summary}"
+
         item_score = score_text(text)
         scores.append(item_score)
 

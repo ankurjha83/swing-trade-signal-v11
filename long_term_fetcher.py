@@ -1,15 +1,11 @@
 """
 long_term_fetcher.py
 
-Long-term accumulation data layer.
-
 Fetches:
 - 1Y daily OHLCV
-- Technical indicators for long-term discount detection
-- Fundamental snapshot from yfinance
-- Latest ticker news from yfinance
-
-This does not replace the swing-trading scanner.
+- long-term technical indicators
+- yfinance fundamental snapshot
+- latest yfinance news
 """
 
 from __future__ import annotations
@@ -64,9 +60,12 @@ def _safe_float(value: Any) -> Any:
 def _normalize_yfinance_df(df: pd.DataFrame | None) -> pd.DataFrame | None:
     if df is None or df.empty:
         return df
+
     df = df.copy()
+
     if hasattr(df.columns, "nlevels") and df.columns.nlevels > 1:
         df.columns = df.columns.get_level_values(0)
+
     return df.dropna()
 
 
@@ -91,6 +90,7 @@ def fetch_fundamentals(ticker: str) -> dict:
                 "exchange": info.get("exchange"),
             }
         )
+
         return fundamentals
 
     except Exception as exc:
@@ -108,7 +108,9 @@ def fetch_daily_history(ticker: str, period: str = "1y") -> pd.DataFrame | None:
             auto_adjust=True,
             threads=False,
         )
+
         return _normalize_yfinance_df(df)
+
     except Exception:
         return None
 
@@ -118,6 +120,7 @@ def enrich_daily_indicators(df: pd.DataFrame | None) -> pd.DataFrame | None:
         return df
 
     df = df.copy()
+
     df["EMA20"] = df["Close"].ewm(span=20, adjust=False).mean()
     df["SMA50"] = df["Close"].rolling(window=50).mean()
     df["SMA100"] = df["Close"].rolling(window=100).mean()
@@ -125,12 +128,14 @@ def enrich_daily_indicators(df: pd.DataFrame | None) -> pd.DataFrame | None:
 
     ema12 = df["Close"].ewm(span=12, adjust=False).mean()
     ema26 = df["Close"].ewm(span=26, adjust=False).mean()
+
     df["MACD"] = ema12 - ema26
     df["MACD_SIGNAL"] = df["MACD"].ewm(span=9, adjust=False).mean()
 
     delta = df["Close"].diff()
     gain = delta.clip(lower=0).rolling(14).mean()
     loss = (-delta.clip(upper=0)).rolling(14).mean()
+
     rs = gain / loss.replace(0, pd.NA)
     df["RSI"] = 100 - (100 / (1 + rs))
 
@@ -165,11 +170,16 @@ def fetch_latest_news(ticker: str, limit: int = 5) -> list[dict]:
                 publisher = content.get("provider", {}).get("displayName") or publisher
 
             link = item.get("link")
+
             if isinstance(content.get("canonicalUrl"), dict):
                 link = content.get("canonicalUrl", {}).get("url") or link
 
             summary = content.get("summary") or item.get("summary") or ""
-            published_at = content.get("pubDate") or item.get("providerPublishTime") or item.get("published")
+            published_at = (
+                content.get("pubDate")
+                or item.get("providerPublishTime")
+                or item.get("published")
+            )
 
             cleaned.append(
                 {
@@ -180,6 +190,7 @@ def fetch_latest_news(ticker: str, limit: int = 5) -> list[dict]:
                     "published_at": published_at,
                 }
             )
+
         return cleaned
 
     except Exception:
@@ -192,6 +203,7 @@ def fetch_long_term_data(ticker: str) -> dict:
     news = fetch_latest_news(ticker)
 
     error = None
+
     if daily_df is None or daily_df.empty:
         error = "no_daily_price_data"
 
@@ -202,7 +214,3 @@ def fetch_long_term_data(ticker: str) -> dict:
         "news": news,
         "error": error,
     }
-
-
-def fetch_long_term_batch(tickers: list[str]) -> dict[str, dict]:
-    return {ticker: fetch_long_term_data(ticker) for ticker in tickers}
