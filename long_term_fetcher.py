@@ -136,8 +136,11 @@ def enrich_daily_indicators(df: pd.DataFrame | None) -> pd.DataFrame | None:
     gain = delta.clip(lower=0).rolling(14).mean()
     loss = (-delta.clip(upper=0)).rolling(14).mean()
 
-    rs = gain / loss.replace(0, pd.NA)
-    df["RSI"] = 100 - (100 / (1 + rs))
+    rs = gain / loss
+    rsi = 100 - (100 / (1 + rs))
+    rsi = rsi.mask((loss == 0) & (gain > 0), 100)
+    rsi = rsi.mask((loss == 0) & (gain == 0), 50)
+    df["RSI"] = rsi
 
     df["VOLUME_AVG_20"] = df["Volume"].rolling(window=20).mean()
     df["VOLUME_RATIO"] = df["Volume"] / df["VOLUME_AVG_20"]

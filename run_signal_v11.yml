@@ -1,0 +1,52 @@
+name: Run Long-Term Accumulation Scanner
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 14 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Run syntax check
+        run: >
+          python -m py_compile
+          main.py
+          long_term_fetcher.py
+          long_term_scorer.py
+          sentiment_analyzer.py
+          long_term_notifier.py
+          config/settings.py
+
+      - name: Run scanner
+        env:
+          V11_TELEGRAM_BOT_TOKEN: ${{ secrets.V11_TELEGRAM_BOT_TOKEN }}
+          V11_TELEGRAM_CHAT_ID: ${{ secrets.V11_TELEGRAM_CHAT_ID }}
+        run: python main.py
+
+      - name: Commit long-term logs
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f logs/long_term || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Update long-term scanner logs"
+            git push
+          fi
