@@ -3,7 +3,8 @@ name: Run Long-Term Accumulation Scanner
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 14 * * 1"
+    # Monday and Thursday, one hour before US market open during daylight saving time
+    - cron: "30 12 * * 1,4"
 
 permissions:
   contents: write
