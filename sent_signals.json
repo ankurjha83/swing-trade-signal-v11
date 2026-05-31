@@ -1,4 +1,0 @@
-{
-  "_comment": "Deduplication state. Auto-managed by main.py. Do not edit manually.",
-  "_format": "{\"TICKER\": {\"last_alerted\": \"YYYY-MM-DD\", \"alert_type\": \"confirmed|watchlist\", \"consecutive_misses\": 0}}"
-}
