@@ -22,6 +22,10 @@ from config.settings import (
     LOG_DIR,
     MIN_ALERT_SCORE,
     MIN_DISCOUNT_SCORE,
+    MIN_QUALITY_SCORE,
+    MIN_TECHNICAL_SCORE,
+    MAX_ALERTS_PER_SECTOR,
+    MAX_TOTAL_ALERTS,
     SEND_INDIVIDUAL_ALERTS,
     SEND_SUMMARY_ALERT,
     VERSION,
@@ -64,6 +68,48 @@ def write_log(results: list, skipped: list[dict]) -> None:
 
     logger.info("Wrote long-term log to %s", log_path)
 
+def filter_and_cap_alerts(results: list) -> list:
+    """
+    Apply strict alert rules and cap alerts by sector.
+
+    This prevents alert spam when an entire sector is beaten down.
+    Example: if many software stocks qualify, only the best 2 are alerted.
+    """
+    strict_candidates = [
+        r for r in results
+        if (
+            r.total_score >= MIN_ALERT_SCORE
+            and r.discount_score >= MIN_DISCOUNT_SCORE
+            and r.quality_score >= MIN_QUALITY_SCORE
+            and r.technical_score >= MIN_TECHNICAL_SCORE
+            and r.rating not in {"Avoid", "Blocked"}
+        )
+    ]
+
+    sector_groups = {}
+
+    for result in strict_candidates:
+        sector = result.fundamentals.get("sector") or "Unknown"
+        sector_groups.setdefault(sector, []).append(result)
+
+    capped_alerts = []
+
+    for sector, sector_results in sector_groups.items():
+        ranked_sector_results = sorted(
+            sector_results,
+            key=lambda r: r.total_score,
+            reverse=True,
+        )
+
+        capped_alerts.extend(ranked_sector_results[:MAX_ALERTS_PER_SECTOR])
+
+    capped_alerts = sorted(
+        capped_alerts,
+        key=lambda r: r.total_score,
+        reverse=True,
+    )
+
+    return capped_alerts[:MAX_TOTAL_ALERTS]
 
 def run() -> None:
     logger.info("=== Long-term accumulation scanner starting ===")
@@ -95,14 +141,18 @@ def run() -> None:
     results = sorted(results, key=lambda r: r.total_score, reverse=True)
     write_log(results, skipped)
 
-    alert_candidates = [
-        r for r in results
-        if (
-            r.total_score >= MIN_ALERT_SCORE
-            and r.discount_score >= MIN_DISCOUNT_SCORE
-            and r.rating not in {"Avoid", "Blocked"}
-     )
-    ]
+    alert_candidates = filter_and_cap_alerts(results)
+
+    logger.info(
+    "Alert filters applied: min_score=%s, min_discount=%s, min_quality=%s, "
+    "min_technical=%s, max_per_sector=%s, max_total=%s",
+    MIN_ALERT_SCORE,
+    MIN_DISCOUNT_SCORE,
+    MIN_QUALITY_SCORE,
+    MIN_TECHNICAL_SCORE,
+    MAX_ALERTS_PER_SECTOR,
+    MAX_TOTAL_ALERTS,
+)
 
     if SEND_INDIVIDUAL_ALERTS:
         for result in alert_candidates:
