@@ -2,19 +2,19 @@
   "scanner": "long_term_accumulation",
   "version": "2.0-long-term",
   "run_date": "2026-05-31",
-  "run_ts": "2026-05-31T14:41:40.612269+00:00",
+  "run_ts": "2026-05-31T15:08:11.538699+00:00",
   "min_alert_score": 78,
   "results": [
     {
       "ticker": "META",
       "price": 632.51,
-      "total_score": 89,
+      "total_score": 92,
       "quality_score": 50,
       "valuation_score": 26,
       "discount_score": 9,
       "technical_score": 4,
-      "sentiment_score": 0.0,
-      "sentiment_label": "neutral",
+      "sentiment_score": 0.4667,
+      "sentiment_label": "positive",
       "rating": "A",
       "action": "Aggressive accumulation candidate",
       "risk": "Medium",
@@ -130,28 +130,28 @@
           "score": 1.0
         },
         {
+          "title": "Can Meta turn AI capacity into a $1 trillion market opportunity?",
+          "publisher": "Investing.com",
+          "link": "https://finance.yahoo.com/sectors/technology/articles/meta-turn-ai-capacity-1-144215747.html",
+          "score": 0.0
+        },
+        {
+          "title": "Can Meta Stock Reach $1,500 by 2030?",
+          "publisher": "24/7 Wall St.",
+          "link": "https://247wallst.com/investing/2026/05/31/can-meta-stock-reach-1500-by-2030/",
+          "score": 1.0
+        },
+        {
           "title": "Dell exploded 255% since Trump told Americans to 'buy a Dell' \u2014 and his account held it before a $9.7B Pentagon deal",
           "publisher": "Moneywise",
           "link": "https://finance.yahoo.com/markets/stocks/articles/dell-exploded-255-since-trump-141500533.html",
           "score": 0.0
         },
         {
-          "title": "'You Don't Need A 10-Year Plan,' Former Meta Operating Chief Tells Gen Z To Abandon Age-Old Career Advice",
-          "publisher": "Benzinga",
-          "link": "https://www.yahoo.com/lifestyle/articles/dont-10-plan-former-meta-123310748.html",
-          "score": -1.0
-        },
-        {
-          "title": "Inside the Ambitious Plan That Actually Made Home Prices in Austin Affordable Again",
-          "publisher": "Barrons.com",
-          "link": "https://www.barrons.com/articles/austin-texas-home-prices-sales-affordable-d9c899ba?siteid=yhoof2&yptr=yahoo",
-          "score": 0.0
-        },
-        {
-          "title": "Meta Platforms Investors Reject Proposals as Zuckerberg Bets Big on AI",
-          "publisher": "MarketBeat",
-          "link": "https://www.marketbeat.com/instant-alerts/meta-platforms-investors-reject-proposals-as-zuckerberg-bets-big-on-ai-2026-05-30/?utm_source=yahoofinance&utm_medium=yahoofinance",
-          "score": 0.0
+          "title": "AI Bubble Debate Gets Real as Chip Stocks Rally Turns Historic",
+          "publisher": "Bloomberg",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/ai-bubble-debate-gets-real-130007767.html",
+          "score": 0.333
         }
       ]
     },
@@ -365,7 +365,7 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.29865533040048214,
+            "value": 0.2986554089515904,
             "points": 12,
             "max": 15
           },
@@ -1036,22 +1036,22 @@
           "score": 1.0
         },
         {
-          "title": "Nvidia Shares Dropped After Stellar Earnings. Is This a Sign of What's Coming for Artificial Intelligence (AI) Stocks?",
+          "title": "I Used to Think a 401(k) Was the Best Retirement Savings Tool. But Here Are 4 Issues to Know About.",
           "publisher": "Motley Fool",
-          "link": "https://www.fool.com/investing/2026/05/31/nvidia-shares-dropped-after-stellar-earnings-is-th/",
+          "link": "https://www.fool.com/retirement/2026/05/31/i-used-to-think-a-401k-was-the-best-retirement-sav/",
           "score": 0.0
         },
         {
-          "title": "The S&P 500 returns 10% on average, but your mortgage costs 6.36% \u2014 here's what the math says to do",
-          "publisher": "Moneywise",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-returns-10-average-143000342.html",
-          "score": 0.0
+          "title": "Ford vs GM: One Auto Giant Looks Much Stronger for 2026",
+          "publisher": "24/7 Wall St.",
+          "link": "https://247wallst.com/investing/2026/05/31/ford-vs-gm-one-auto-giant-looks-much-stronger-for-2026/",
+          "score": 1.0
         },
         {
-          "title": "Inflation Is Soaring, and the Federal Reserve Could Do Something It Hasn't Done Since 2023. Here's What It Means for Stocks.",
-          "publisher": "Motley Fool",
-          "link": "https://www.fool.com/investing/2026/05/31/inflation-soaring-federal-reserve-2023-means-stock/",
-          "score": 0.0
+          "title": "Trump and Kevin Warsh Plan a Huge Giveaway to Retirees. There\u2019s Only One Problem",
+          "publisher": "24/7 Wall St.",
+          "link": "https://247wallst.com/investing/2026/05/31/trump-and-kevin-warsh-plan-a-huge-giveaway-to-retirees-theres-only-one-problem/",
+          "score": -1.0
         }
       ]
     },
@@ -1565,12 +1565,12 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.24741874748247394,
+            "value": 0.24741867093123757,
             "points": 9,
             "max": 15
           },
           "drawdown_6m": {
-            "value": 0.24741874748247394,
+            "value": 0.24741867093123757,
             "points": 0,
             "max": 0
           }
@@ -1581,7 +1581,7 @@
             "macd_stabilizing": true,
             "above_ema20": false,
             "not_broken_vs_sma200": true,
-            "rebound_from_3m_low": 0.0634039235503932,
+            "rebound_from_3m_low": 0.06340399997125425,
             "points": 4,
             "max": 5
           }
@@ -1715,7 +1715,7 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.26233056289375617,
+            "value": 0.26233060717021434,
             "points": 12,
             "max": 15
           },
@@ -1865,7 +1865,7 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.46715024032108,
+            "value": 0.4671502907096599,
             "points": 15,
             "max": 15
           },
@@ -2315,7 +2315,7 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.4176625797425616,
+            "value": 0.4176625282830296,
             "points": 15,
             "max": 15
           },
@@ -2413,7 +2413,7 @@
       "valuation_score": 20,
       "discount_score": 0,
       "technical_score": 5,
-      "sentiment_score": 0.2,
+      "sentiment_score": 0.0667,
       "sentiment_label": "neutral",
       "rating": "B",
       "action": "Strong accumulation candidate",
@@ -2524,6 +2524,12 @@
       },
       "headlines": [
         {
+          "title": "AI Bubble Debate Gets Real as Chip Stocks Rally Turns Historic",
+          "publisher": "Bloomberg",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/ai-bubble-debate-gets-real-130007767.html",
+          "score": 0.333
+        },
+        {
           "title": "Dow Jones Futures Loom As Trump Makes This Iran Move; Nvidia, Tesla Lead 5 Titans Near Buy Points",
           "publisher": "Investor's Business Daily",
           "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-iran-hopes-nvidia-tesla-stocks-near-buy-points/?src=A00220&yptr=yahoo",
@@ -2546,12 +2552,6 @@
           "publisher": "Motley Fool",
           "link": "https://www.fool.com/investing/2026/05/30/prediction-this-artificial-intelligence-ai-inferen/",
           "score": -1.0
-        },
-        {
-          "title": "Broadcom Deepens AI Infrastructure Role With US$36b Deal And FuriosaAI Pact",
-          "publisher": "Simply Wall St.",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/broadcom-deepens-ai-infrastructure-role-140246797.html",
-          "score": 1.0
         }
       ]
     },
@@ -2765,7 +2765,7 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.18241235069144066,
+            "value": 0.1824124001278982,
             "points": 9,
             "max": 15
           },
@@ -2852,6 +2852,156 @@
           "publisher": "Bloomberg",
           "link": "https://finance.yahoo.com/markets/stocks/articles/coreweave-stunning-rally-creates-prove-174657942.html",
           "score": 0.0
+        }
+      ]
+    },
+    {
+      "ticker": "MU",
+      "price": 971.0,
+      "total_score": 75,
+      "quality_score": 43,
+      "valuation_score": 25,
+      "discount_score": 0,
+      "technical_score": 4,
+      "sentiment_score": 0.2667,
+      "sentiment_label": "positive",
+      "rating": "B",
+      "action": "Strong accumulation candidate",
+      "risk": "Medium",
+      "factors": {
+        "quality": {
+          "revenue_growth": {
+            "value": 1.963,
+            "points": 15,
+            "max": 15
+          },
+          "free_cashflow": {
+            "value": 2893499904.0,
+            "points": 5,
+            "max": 10
+          },
+          "gross_margins": {
+            "value": 0.58437,
+            "points": 8,
+            "max": 10
+          },
+          "return_on_equity": {
+            "value": 0.39823002,
+            "points": 5,
+            "max": 5
+          },
+          "market_cap": {
+            "value": 1095029751808.0,
+            "points": 10,
+            "max": 10
+          }
+        },
+        "valuation": {
+          "peg_ratio": {
+            "value": 0.33,
+            "points": 15,
+            "max": 15
+          },
+          "forward_pe": {
+            "value": 9.222632,
+            "points": 10,
+            "max": 10
+          },
+          "price_to_sales": {
+            "value": 18.841166,
+            "points": 0,
+            "max": 5
+          }
+        },
+        "discount": {
+          "drawdown_52w": {
+            "value": 0.0,
+            "points": 0,
+            "max": 15
+          },
+          "drawdown_6m": {
+            "value": 0.0,
+            "points": 0,
+            "max": 0
+          }
+        },
+        "technical": {
+          "technical": {
+            "rsi": 70.09411461700584,
+            "macd_stabilizing": true,
+            "above_ema20": true,
+            "not_broken_vs_sma200": true,
+            "rebound_from_3m_low": 2.017402227574653,
+            "points": 4,
+            "max": 5
+          }
+        }
+      },
+      "fundamentals": {
+        "market_cap": 1095029751808.0,
+        "enterprise_value": 1091238756352.0,
+        "revenue_growth": 1.963,
+        "earnings_growth": 7.56,
+        "gross_margins": 0.58437,
+        "operating_margins": 0.67624,
+        "profit_margins": 0.41486,
+        "free_cashflow": 2893499904.0,
+        "operating_cashflow": 30652999680.0,
+        "total_cash": 14588999680.0,
+        "total_debt": 10798000128.0,
+        "debt_to_equity": 14.902,
+        "forward_pe": 9.222632,
+        "trailing_pe": 45.86679,
+        "peg_ratio": 0.33,
+        "price_to_sales": 18.841166,
+        "price_to_book": 15.115899,
+        "return_on_equity": 0.39823002,
+        "return_on_assets": 0.20145,
+        "recommendation_mean": 1.47727,
+        "number_of_analyst_opinions": 40.0,
+        "current_price": 971.0,
+        "regular_market_price": 971.0,
+        "fifty_two_week_high": 981.0,
+        "fifty_two_week_low": 94.4,
+        "target_mean_price": 702.975,
+        "target_median_price": 550.0,
+        "short_name": "Micron Technology, Inc.",
+        "long_name": "Micron Technology, Inc.",
+        "sector": "Technology",
+        "industry": "Semiconductors",
+        "currency": "USD",
+        "exchange": "NMS"
+      },
+      "headlines": [
+        {
+          "title": "Market concentration is creating 'fragility': Wall Street weighs 'narrow leadership' as stocks hit all-time high",
+          "publisher": "Yahoo Finance",
+          "link": "https://finance.yahoo.com/markets/article/market-concentration-is-creating-fragility-wall-street-weighs-narrow-leadership-as-stocks-hit-all-time-high-135336610.html",
+          "score": 0.0
+        },
+        {
+          "title": "Big Tech companies are screwing the average investor \u2014 here's how",
+          "publisher": "Yahoo Finance",
+          "link": "https://finance.yahoo.com/markets/article/big-tech-companies-are-screwing-the-average-investor--heres-how-123000495.html",
+          "score": 0.0
+        },
+        {
+          "title": "AI Bubble Debate Gets Real as Chip Stocks Rally Turns Historic",
+          "publisher": "Bloomberg",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/ai-bubble-debate-gets-real-130007767.html",
+          "score": 0.333
+        },
+        {
+          "title": "Are Micron and Sandisk Stocks in a Bubble?",
+          "publisher": "Motley Fool",
+          "link": "https://www.fool.com/investing/2026/05/31/are-micron-and-sandisk-stocks-in-a-bubble/",
+          "score": 0.0
+        },
+        {
+          "title": "After Following Generative AI Every Single Day These 3 ETFs Keep Rising to the Top of My Research",
+          "publisher": "24/7 Wall St.",
+          "link": "https://247wallst.com/investing/2026/05/31/after-following-generative-ai-every-single-day-these-3-etfs-keep-rising-to-the-top-of-my-research/",
+          "score": 1.0
         }
       ]
     },
@@ -3013,7 +3163,7 @@
       "valuation_score": 20,
       "discount_score": 5,
       "technical_score": 4,
-      "sentiment_score": 0.0,
+      "sentiment_score": 0.0667,
       "sentiment_label": "neutral",
       "rating": "C",
       "action": "Gradual accumulation candidate",
@@ -3130,6 +3280,12 @@
           "score": 0.0
         },
         {
+          "title": "AI Bubble Debate Gets Real as Chip Stocks Rally Turns Historic",
+          "publisher": "Bloomberg",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/ai-bubble-debate-gets-real-130007767.html",
+          "score": 0.333
+        },
+        {
           "title": "S&P 500 Dividend Yield Hits 1.08%. The Lowest Payout Rate Since the 1800s Is a Retirement Red Flag.",
           "publisher": "24/7 Wall St.",
           "link": "https://247wallst.com/personal-finance/2026/05/31/sp-500-dividend-yield-hits-1-08-the-lowest-payout-rate-since-the-1800s-is-a-retirement-red-flag/",
@@ -3145,12 +3301,6 @@
           "title": "Microsoft (MSFT) Is Up 7.6% After Revealing US$37B AI Run Rate And New EY Alliance",
           "publisher": "Simply Wall St.",
           "link": "https://finance.yahoo.com/markets/stocks/articles/microsoft-msft-7-6-revealing-110757311.html",
-          "score": 0.0
-        },
-        {
-          "title": "Micron Just Entered the Trillion-Dollar Club. Is It Too Late to Buy the Stock?",
-          "publisher": "Motley Fool",
-          "link": "https://www.fool.com/investing/2026/05/31/micron-just-entered-the-trillion-dollar-club-is-it/",
           "score": 0.0
         }
       ]
@@ -3815,12 +3965,12 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.24109122526261226,
+            "value": 0.2410911680832258,
             "points": 9,
             "max": 15
           },
           "drawdown_6m": {
-            "value": 0.24109122526261226,
+            "value": 0.2410911680832258,
             "points": 0,
             "max": 0
           }
@@ -4206,156 +4356,6 @@
       ]
     },
     {
-      "ticker": "MU",
-      "price": 971.0,
-      "total_score": 72,
-      "quality_score": 43,
-      "valuation_score": 25,
-      "discount_score": 0,
-      "technical_score": 4,
-      "sentiment_score": 0.2,
-      "sentiment_label": "neutral",
-      "rating": "C",
-      "action": "Gradual accumulation candidate",
-      "risk": "Medium-High",
-      "factors": {
-        "quality": {
-          "revenue_growth": {
-            "value": 1.963,
-            "points": 15,
-            "max": 15
-          },
-          "free_cashflow": {
-            "value": 2893499904.0,
-            "points": 5,
-            "max": 10
-          },
-          "gross_margins": {
-            "value": 0.58437,
-            "points": 8,
-            "max": 10
-          },
-          "return_on_equity": {
-            "value": 0.39823002,
-            "points": 5,
-            "max": 5
-          },
-          "market_cap": {
-            "value": 1095029751808.0,
-            "points": 10,
-            "max": 10
-          }
-        },
-        "valuation": {
-          "peg_ratio": {
-            "value": 0.33,
-            "points": 15,
-            "max": 15
-          },
-          "forward_pe": {
-            "value": 9.222632,
-            "points": 10,
-            "max": 10
-          },
-          "price_to_sales": {
-            "value": 18.841166,
-            "points": 0,
-            "max": 5
-          }
-        },
-        "discount": {
-          "drawdown_52w": {
-            "value": 0.0,
-            "points": 0,
-            "max": 15
-          },
-          "drawdown_6m": {
-            "value": 0.0,
-            "points": 0,
-            "max": 0
-          }
-        },
-        "technical": {
-          "technical": {
-            "rsi": 70.09411461700584,
-            "macd_stabilizing": true,
-            "above_ema20": true,
-            "not_broken_vs_sma200": true,
-            "rebound_from_3m_low": 2.017402227574653,
-            "points": 4,
-            "max": 5
-          }
-        }
-      },
-      "fundamentals": {
-        "market_cap": 1095029751808.0,
-        "enterprise_value": 1091238756352.0,
-        "revenue_growth": 1.963,
-        "earnings_growth": 7.56,
-        "gross_margins": 0.58437,
-        "operating_margins": 0.67624,
-        "profit_margins": 0.41486,
-        "free_cashflow": 2893499904.0,
-        "operating_cashflow": 30652999680.0,
-        "total_cash": 14588999680.0,
-        "total_debt": 10798000128.0,
-        "debt_to_equity": 14.902,
-        "forward_pe": 9.222632,
-        "trailing_pe": 45.86679,
-        "peg_ratio": 0.33,
-        "price_to_sales": 18.841166,
-        "price_to_book": 15.115899,
-        "return_on_equity": 0.39823002,
-        "return_on_assets": 0.20145,
-        "recommendation_mean": 1.47727,
-        "number_of_analyst_opinions": 40.0,
-        "current_price": 971.0,
-        "regular_market_price": 971.0,
-        "fifty_two_week_high": 981.0,
-        "fifty_two_week_low": 94.4,
-        "target_mean_price": 702.975,
-        "target_median_price": 550.0,
-        "short_name": "Micron Technology, Inc.",
-        "long_name": "Micron Technology, Inc.",
-        "sector": "Technology",
-        "industry": "Semiconductors",
-        "currency": "USD",
-        "exchange": "NMS"
-      },
-      "headlines": [
-        {
-          "title": "Market concentration is creating 'fragility': Wall Street weighs 'narrow leadership' as stocks hit all-time high",
-          "publisher": "Yahoo Finance",
-          "link": "https://finance.yahoo.com/markets/article/market-concentration-is-creating-fragility-wall-street-weighs-narrow-leadership-as-stocks-hit-all-time-high-135336610.html",
-          "score": 0.0
-        },
-        {
-          "title": "Big Tech companies are screwing the average investor \u2014 here's how",
-          "publisher": "Yahoo Finance",
-          "link": "https://finance.yahoo.com/markets/article/big-tech-companies-are-screwing-the-average-investor--heres-how-123000495.html",
-          "score": 0.0
-        },
-        {
-          "title": "Are Micron and Sandisk Stocks in a Bubble?",
-          "publisher": "Motley Fool",
-          "link": "https://www.fool.com/investing/2026/05/31/are-micron-and-sandisk-stocks-in-a-bubble/",
-          "score": 0.0
-        },
-        {
-          "title": "After Following Generative AI Every Single Day These 3 ETFs Keep Rising to the Top of My Research",
-          "publisher": "24/7 Wall St.",
-          "link": "https://247wallst.com/investing/2026/05/31/after-following-generative-ai-every-single-day-these-3-etfs-keep-rising-to-the-top-of-my-research/",
-          "score": 1.0
-        },
-        {
-          "title": "Micron Just Entered the Trillion-Dollar Club. Is It Too Late to Buy the Stock?",
-          "publisher": "Motley Fool",
-          "link": "https://www.fool.com/investing/2026/05/31/micron-just-entered-the-trillion-dollar-club-is-it/",
-          "score": 0.0
-        }
-      ]
-    },
-    {
       "ticker": "INCY",
       "price": 96.74,
       "total_score": 71,
@@ -4715,7 +4715,7 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.4995348867518478,
+            "value": 0.499534852780311,
             "points": 15,
             "max": 15
           },
@@ -5020,7 +5020,7 @@
             "max": 15
           },
           "drawdown_6m": {
-            "value": 0.2203260665468823,
+            "value": 0.22032597904038856,
             "points": 0,
             "max": 0
           }
@@ -5856,156 +5856,6 @@
       ]
     },
     {
-      "ticker": "ORCL",
-      "price": 225.78,
-      "total_score": 69,
-      "quality_score": 33,
-      "valuation_score": 17,
-      "discount_score": 12,
-      "technical_score": 4,
-      "sentiment_score": 0.4,
-      "sentiment_label": "positive",
-      "rating": "C",
-      "action": "Gradual accumulation candidate",
-      "risk": "Medium-High",
-      "factors": {
-        "quality": {
-          "revenue_growth": {
-            "value": 0.217,
-            "points": 12,
-            "max": 15
-          },
-          "free_cashflow": {
-            "value": -22298499072.0,
-            "points": 0,
-            "max": 10
-          },
-          "gross_margins": {
-            "value": 0.67084,
-            "points": 8,
-            "max": 10
-          },
-          "return_on_equity": {
-            "value": 0.57572,
-            "points": 5,
-            "max": 5
-          },
-          "market_cap": {
-            "value": 649353691136.0,
-            "points": 8,
-            "max": 10
-          }
-        },
-        "valuation": {
-          "peg_ratio": {
-            "value": 1.43,
-            "points": 9,
-            "max": 15
-          },
-          "forward_pe": {
-            "value": 28.108276,
-            "points": 5,
-            "max": 10
-          },
-          "price_to_sales": {
-            "value": 10.134117,
-            "points": 3,
-            "max": 5
-          }
-        },
-        "discount": {
-          "drawdown_52w": {
-            "value": 0.3069116609124452,
-            "points": 12,
-            "max": 15
-          },
-          "drawdown_6m": {
-            "value": 0.0,
-            "points": 0,
-            "max": 0
-          }
-        },
-        "technical": {
-          "technical": {
-            "rsi": 68.51186301816605,
-            "macd_stabilizing": true,
-            "above_ema20": true,
-            "not_broken_vs_sma200": true,
-            "rebound_from_3m_low": 0.6377484243413214,
-            "points": 4,
-            "max": 5
-          }
-        }
-      },
-      "fundamentals": {
-        "market_cap": 649353691136.0,
-        "enterprise_value": 777896656896.0,
-        "revenue_growth": 0.217,
-        "earnings_growth": 0.245,
-        "gross_margins": 0.67084,
-        "operating_margins": 0.32676,
-        "profit_margins": 0.25298,
-        "free_cashflow": -22298499072.0,
-        "operating_cashflow": 23513999360.0,
-        "total_cash": 39132000256.0,
-        "total_debt": 162164998144.0,
-        "debt_to_equity": 415.265,
-        "forward_pe": 28.108276,
-        "trailing_pe": 40.462364,
-        "peg_ratio": 1.43,
-        "price_to_sales": 10.134117,
-        "price_to_book": 19.353676,
-        "return_on_equity": 0.57572,
-        "return_on_assets": 0.06335,
-        "recommendation_mean": 1.51163,
-        "number_of_analyst_opinions": 39.0,
-        "current_price": 225.78,
-        "regular_market_price": 225.78,
-        "fifty_two_week_high": 345.72,
-        "fifty_two_week_low": 134.57,
-        "target_mean_price": 244.02513,
-        "target_median_price": 228.0,
-        "short_name": "Oracle Corporation",
-        "long_name": "Oracle Corporation",
-        "sector": "Technology",
-        "industry": "Software - Infrastructure",
-        "currency": "USD",
-        "exchange": "NYQ"
-      },
-      "headlines": [
-        {
-          "title": "MongoDB's AI Advantage Is Starting to Show Up in Results",
-          "publisher": "MarketBeat",
-          "link": "https://www.marketbeat.com/originals/mongodbs-ai-advantage-is-starting-to-show-up-in-results/?utm_source=yahoofinance&utm_medium=yahoofinance",
-          "score": -1.0
-        },
-        {
-          "title": "As Nvidia, Oracle And Amazon Pour Billions Into AI, Wall Street Is Quietly Hedging For Trouble",
-          "publisher": "Benzinga",
-          "link": "https://finance.yahoo.com/markets/options/articles/nvidia-oracle-amazon-pour-billions-220125805.html",
-          "score": 1.0
-        },
-        {
-          "title": "Assessing Oracle (ORCL) Valuation After Strong Multi\u2011Month Share Price Momentum",
-          "publisher": "Simply Wall St.",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/assessing-oracle-orcl-valuation-strong-211042307.html",
-          "score": 1.0
-        },
-        {
-          "title": "Financial Services Roundup: Market Talk",
-          "publisher": "The Wall Street Journal",
-          "link": "https://www.wsj.com/business/financial-services-roundup-market-talk-60605b39?siteid=yhoof2&yptr=yahoo",
-          "score": 0.0
-        },
-        {
-          "title": "Snowflake, Oracle, ServiceNow Stocks Rally As AI Trade Heats Up Again",
-          "publisher": "GuruFocus.com",
-          "link": "https://finance.yahoo.com/sectors/technology/articles/snowflake-oracle-servicenow-stocks-rally-193130579.html",
-          "score": 1.0
-        }
-      ]
-    },
-    {
       "ticker": "RMD",
       "price": 190.57,
       "total_score": 69,
@@ -6463,7 +6313,7 @@
       "valuation_score": 17,
       "discount_score": 0,
       "technical_score": 3,
-      "sentiment_score": 0.4,
+      "sentiment_score": 0.4667,
       "sentiment_label": "positive",
       "rating": "C",
       "action": "Gradual accumulation candidate",
@@ -6586,6 +6436,12 @@
           "score": 1.0
         },
         {
+          "title": "AI Bubble Debate Gets Real as Chip Stocks Rally Turns Historic",
+          "publisher": "Bloomberg",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/ai-bubble-debate-gets-real-130007767.html",
+          "score": 0.333
+        },
+        {
           "title": "Dow Jones Futures Loom As Trump Makes This Iran Move; Nvidia, Tesla Lead 5 Titans Near Buy Points",
           "publisher": "Investor's Business Daily",
           "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-iran-hopes-nvidia-tesla-stocks-near-buy-points/?src=A00220&yptr=yahoo",
@@ -6596,12 +6452,6 @@
           "publisher": "24/7 Wall St.",
           "link": "https://247wallst.com/investing/2026/05/31/after-following-generative-ai-every-single-day-these-3-etfs-keep-rising-to-the-top-of-my-research/",
           "score": 1.0
-        },
-        {
-          "title": "Alphabet Stock Investors Just Got Great News From a Wall Street Analyst. It's Bad News for Nvidia.",
-          "publisher": "Motley Fool",
-          "link": "https://www.fool.com/investing/2026/05/31/alphabet-stock-investors-great-news-bad-for-nvidia/",
-          "score": 0.0
         }
       ]
     },
@@ -6665,7 +6515,7 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.4275675047951499,
+            "value": 0.42756744335706787,
             "points": 15,
             "max": 15
           },
@@ -7952,6 +7802,156 @@
           "publisher": "Simply Wall St.",
           "link": "https://finance.yahoo.com/markets/stocks/articles/nrg-energy-nrg-valuation-ceo-031441872.html",
           "score": 1.0
+        }
+      ]
+    },
+    {
+      "ticker": "ORCL",
+      "price": 225.78,
+      "total_score": 66,
+      "quality_score": 33,
+      "valuation_score": 17,
+      "discount_score": 12,
+      "technical_score": 4,
+      "sentiment_score": 0.2,
+      "sentiment_label": "neutral",
+      "rating": "C",
+      "action": "Gradual accumulation candidate",
+      "risk": "Medium-High",
+      "factors": {
+        "quality": {
+          "revenue_growth": {
+            "value": 0.217,
+            "points": 12,
+            "max": 15
+          },
+          "free_cashflow": {
+            "value": -22298499072.0,
+            "points": 0,
+            "max": 10
+          },
+          "gross_margins": {
+            "value": 0.67084,
+            "points": 8,
+            "max": 10
+          },
+          "return_on_equity": {
+            "value": 0.57572,
+            "points": 5,
+            "max": 5
+          },
+          "market_cap": {
+            "value": 649353691136.0,
+            "points": 8,
+            "max": 10
+          }
+        },
+        "valuation": {
+          "peg_ratio": {
+            "value": 1.43,
+            "points": 9,
+            "max": 15
+          },
+          "forward_pe": {
+            "value": 28.108276,
+            "points": 5,
+            "max": 10
+          },
+          "price_to_sales": {
+            "value": 10.134117,
+            "points": 3,
+            "max": 5
+          }
+        },
+        "discount": {
+          "drawdown_52w": {
+            "value": 0.30691159598298035,
+            "points": 12,
+            "max": 15
+          },
+          "drawdown_6m": {
+            "value": 0.0,
+            "points": 0,
+            "max": 0
+          }
+        },
+        "technical": {
+          "technical": {
+            "rsi": 68.51186301816605,
+            "macd_stabilizing": true,
+            "above_ema20": true,
+            "not_broken_vs_sma200": true,
+            "rebound_from_3m_low": 0.6377484243413214,
+            "points": 4,
+            "max": 5
+          }
+        }
+      },
+      "fundamentals": {
+        "market_cap": 649353691136.0,
+        "enterprise_value": 777896656896.0,
+        "revenue_growth": 0.217,
+        "earnings_growth": 0.245,
+        "gross_margins": 0.67084,
+        "operating_margins": 0.32676,
+        "profit_margins": 0.25298,
+        "free_cashflow": -22298499072.0,
+        "operating_cashflow": 23513999360.0,
+        "total_cash": 39132000256.0,
+        "total_debt": 162164998144.0,
+        "debt_to_equity": 415.265,
+        "forward_pe": 28.108276,
+        "trailing_pe": 40.462364,
+        "peg_ratio": 1.43,
+        "price_to_sales": 10.134117,
+        "price_to_book": 19.353676,
+        "return_on_equity": 0.57572,
+        "return_on_assets": 0.06335,
+        "recommendation_mean": 1.51163,
+        "number_of_analyst_opinions": 39.0,
+        "current_price": 225.78,
+        "regular_market_price": 225.78,
+        "fifty_two_week_high": 345.72,
+        "fifty_two_week_low": 134.57,
+        "target_mean_price": 244.02513,
+        "target_median_price": 228.0,
+        "short_name": "Oracle Corporation",
+        "long_name": "Oracle Corporation",
+        "sector": "Technology",
+        "industry": "Software - Infrastructure",
+        "currency": "USD",
+        "exchange": "NYQ"
+      },
+      "headlines": [
+        {
+          "title": "AI Hyperscalers Are Taking on Debt, But the Broader Market Looks More Leveraged",
+          "publisher": "Barchart",
+          "link": "https://www.barchart.com/story/news/2217677/ai-hyperscalers-are-taking-on-debt-but-the-broader-market-looks-more-leveraged",
+          "score": 0.0
+        },
+        {
+          "title": "MongoDB's AI Advantage Is Starting to Show Up in Results",
+          "publisher": "MarketBeat",
+          "link": "https://www.marketbeat.com/originals/mongodbs-ai-advantage-is-starting-to-show-up-in-results/?utm_source=yahoofinance&utm_medium=yahoofinance",
+          "score": -1.0
+        },
+        {
+          "title": "As Nvidia, Oracle And Amazon Pour Billions Into AI, Wall Street Is Quietly Hedging For Trouble",
+          "publisher": "Benzinga",
+          "link": "https://finance.yahoo.com/markets/options/articles/nvidia-oracle-amazon-pour-billions-220125805.html",
+          "score": 1.0
+        },
+        {
+          "title": "Assessing Oracle (ORCL) Valuation After Strong Multi\u2011Month Share Price Momentum",
+          "publisher": "Simply Wall St.",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/assessing-oracle-orcl-valuation-strong-211042307.html",
+          "score": 1.0
+        },
+        {
+          "title": "Financial Services Roundup: Market Talk",
+          "publisher": "The Wall Street Journal",
+          "link": "https://www.wsj.com/business/financial-services-roundup-market-talk-60605b39?siteid=yhoof2&yptr=yahoo",
+          "score": 0.0
         }
       ]
     },
@@ -9665,7 +9665,7 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.368079987424599,
+            "value": 0.36807992459531125,
             "points": 15,
             "max": 15
           },
@@ -11015,7 +11015,7 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.17898237337890058,
+            "value": 0.17898230165801843,
             "points": 5,
             "max": 15
           },
@@ -11915,12 +11915,12 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.27424321869413837,
+            "value": 0.2742432747881721,
             "points": 12,
             "max": 15
           },
           "drawdown_6m": {
-            "value": 0.27424321869413837,
+            "value": 0.2742432747881721,
             "points": 0,
             "max": 0
           }
@@ -12606,6 +12606,156 @@
       ]
     },
     {
+      "ticker": "V",
+      "price": 326.36,
+      "total_score": 61,
+      "quality_score": 42,
+      "valuation_score": 13,
+      "discount_score": 0,
+      "technical_score": 3,
+      "sentiment_score": 0.6,
+      "sentiment_label": "positive",
+      "rating": "Watch",
+      "action": "Watchlist only",
+      "risk": "Medium-High",
+      "factors": {
+        "quality": {
+          "revenue_growth": {
+            "value": 0.171,
+            "points": 9,
+            "max": 15
+          },
+          "free_cashflow": {
+            "value": 20839749632.0,
+            "points": 10,
+            "max": 10
+          },
+          "gross_margins": {
+            "value": 0.97778,
+            "points": 10,
+            "max": 10
+          },
+          "return_on_equity": {
+            "value": 0.60349,
+            "points": 5,
+            "max": 5
+          },
+          "market_cap": {
+            "value": 620653051904.0,
+            "points": 8,
+            "max": 10
+          }
+        },
+        "valuation": {
+          "peg_ratio": {
+            "value": 1.69,
+            "points": 5,
+            "max": 15
+          },
+          "forward_pe": {
+            "value": 21.975697,
+            "points": 8,
+            "max": 10
+          },
+          "price_to_sales": {
+            "value": 14.424734,
+            "points": 0,
+            "max": 5
+          }
+        },
+        "discount": {
+          "drawdown_52w": {
+            "value": 0.11886141568636628,
+            "points": 0,
+            "max": 15
+          },
+          "drawdown_6m": {
+            "value": 0.08347987089039928,
+            "points": 0,
+            "max": 0
+          }
+        },
+        "technical": {
+          "technical": {
+            "rsi": 60.15749419548084,
+            "macd_stabilizing": false,
+            "above_ema20": true,
+            "not_broken_vs_sma200": true,
+            "rebound_from_3m_low": 0.10664790892388058,
+            "points": 3,
+            "max": 5
+          }
+        }
+      },
+      "fundamentals": {
+        "market_cap": 620653051904.0,
+        "enterprise_value": 625596497920.0,
+        "revenue_growth": 0.171,
+        "earnings_growth": 0.355,
+        "gross_margins": 0.97778,
+        "operating_margins": 0.67346,
+        "profit_margins": 0.51679003,
+        "free_cashflow": 20839749632.0,
+        "operating_cashflow": 22755999744.0,
+        "total_cash": 13912999936.0,
+        "total_debt": 23975999488.0,
+        "debt_to_equity": 67.233,
+        "forward_pe": 21.975697,
+        "trailing_pe": 28.478184,
+        "peg_ratio": 1.69,
+        "price_to_sales": 14.424734,
+        "price_to_book": 16.290306,
+        "return_on_equity": 0.60349,
+        "return_on_assets": 0.19193001,
+        "recommendation_mean": 1.34211,
+        "number_of_analyst_opinions": 35.0,
+        "current_price": 326.36,
+        "regular_market_price": 326.36,
+        "fifty_two_week_high": 375.51,
+        "fifty_two_week_low": 293.89,
+        "target_mean_price": 398.74313,
+        "target_median_price": 400.6,
+        "short_name": "Visa Inc.",
+        "long_name": "Visa Inc.",
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "currency": "USD",
+        "exchange": "NYQ"
+      },
+      "headlines": [
+        {
+          "title": "Is Visa (V) One of the Best Long-Term Dividend Stocks to Invest In According to Billionaires?",
+          "publisher": "Insider Monkey",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/visa-v-one-best-long-145131772.html",
+          "score": 1.0
+        },
+        {
+          "title": "Visa: The Disruption That Never Came",
+          "publisher": "GuruFocus.com",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/visa-disruption-never-came-114244253.html",
+          "score": 0.0
+        },
+        {
+          "title": "American Express vs. Visa: 2 Different Ways to Bet on Premium Consumer Spending",
+          "publisher": "Motley Fool",
+          "link": "https://www.fool.com/investing/2026/05/31/american-express-visa-bet-premium-consumer-spend/",
+          "score": 1.0
+        },
+        {
+          "title": "Visa\u2019s Replit Investment Links AI Agents To Future Commerce Growth",
+          "publisher": "Simply Wall St.",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/visa-replit-investment-links-ai-230332170.html",
+          "score": 1.0
+        },
+        {
+          "title": "Is the Options Market Predicting a Spike in Visa Stock?",
+          "publisher": "Zacks",
+          "link": "https://finance.yahoo.com/markets/options/articles/options-market-predicting-spike-visa-185300878.html",
+          "score": 0.0
+        }
+      ]
+    },
+    {
       "ticker": "WTW",
       "price": 249.67,
       "total_score": 61,
@@ -13115,7 +13265,7 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.27833865916049766,
+            "value": 0.27833871816482064,
             "points": 12,
             "max": 15
           },
@@ -13663,7 +13813,7 @@
       "valuation_score": 24,
       "discount_score": 0,
       "technical_score": 3,
-      "sentiment_score": 0.2,
+      "sentiment_score": 0.0667,
       "sentiment_label": "neutral",
       "rating": "Watch",
       "action": "Watchlist only",
@@ -13774,6 +13924,12 @@
       },
       "headlines": [
         {
+          "title": "AI Bubble Debate Gets Real as Chip Stocks Rally Turns Historic",
+          "publisher": "Bloomberg",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/ai-bubble-debate-gets-real-130007767.html",
+          "score": 0.333
+        },
+        {
           "title": "The AI Trade Is Getting Overcrowded. Here\u2019s Why You Should Opt for the iShares Semiconductor ETF Instead.",
           "publisher": "Barchart",
           "link": "https://www.barchart.com/story/news/2183501/the-ai-trade-is-getting-overcrowded-heres-why-you-should-opt-for-the-ishares-semiconductor-etf-instead",
@@ -13796,12 +13952,6 @@
           "publisher": "Stocktwits",
           "link": "https://stocktwits.com/news-articles/business/others/tradr-launches-leveraged-et-fs-on-microchip-nxp-and-on-semi/cZgi1OjReso",
           "score": 0.0
-        },
-        {
-          "title": "Assessing NXP Semiconductors (NXPI) Valuation After A Strong Multi\u2011Month Share Price Run",
-          "publisher": "Simply Wall St.",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/assessing-nxp-semiconductors-nxpi-valuation-130928509.html",
-          "score": 1.0
         }
       ]
     },
@@ -14765,7 +14915,7 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.2382830033345918,
+            "value": 0.2382829452969947,
             "points": 9,
             "max": 15
           },
@@ -15001,6 +15151,156 @@
           "title": "SCHD\u2019s $71.6 Billion Portfolio Delivers 20% Gains Plus 3.3% Yield This Year",
           "publisher": "24/7 Wall St.",
           "link": "https://247wallst.com/investing/2026/05/28/schds-71-6-billion-portfolio-delivers-20-gains-plus-3-3-yield-this-year/",
+          "score": 0.0
+        }
+      ]
+    },
+    {
+      "ticker": "AMZN",
+      "price": 270.64,
+      "total_score": 58,
+      "quality_score": 36,
+      "valuation_score": 15,
+      "discount_score": 0,
+      "technical_score": 4,
+      "sentiment_score": 0.2667,
+      "sentiment_label": "positive",
+      "rating": "Watch",
+      "action": "Watchlist only",
+      "risk": "Medium-High",
+      "factors": {
+        "quality": {
+          "revenue_growth": {
+            "value": 0.166,
+            "points": 9,
+            "max": 15
+          },
+          "free_cashflow": {
+            "value": 9806624768.0,
+            "points": 8,
+            "max": 10
+          },
+          "gross_margins": {
+            "value": 0.50604,
+            "points": 5,
+            "max": 10
+          },
+          "return_on_equity": {
+            "value": 0.24285,
+            "points": 4,
+            "max": 5
+          },
+          "market_cap": {
+            "value": 2911304417280.0,
+            "points": 10,
+            "max": 10
+          }
+        },
+        "valuation": {
+          "peg_ratio": {
+            "value": 1.83,
+            "points": 5,
+            "max": 15
+          },
+          "forward_pe": {
+            "value": 27.443575,
+            "points": 5,
+            "max": 10
+          },
+          "price_to_sales": {
+            "value": 3.9194918,
+            "points": 5,
+            "max": 5
+          }
+        },
+        "discount": {
+          "drawdown_52w": {
+            "value": 0.015818668825836168,
+            "points": 0,
+            "max": 15
+          },
+          "drawdown_6m": {
+            "value": 0.015818668825836168,
+            "points": 0,
+            "max": 0
+          }
+        },
+        "technical": {
+          "technical": {
+            "rsi": 47.86433958936637,
+            "macd_stabilizing": false,
+            "above_ema20": true,
+            "not_broken_vs_sma200": true,
+            "rebound_from_3m_low": 0.3576804435658261,
+            "points": 4,
+            "max": 5
+          }
+        }
+      },
+      "fundamentals": {
+        "market_cap": 2911304417280.0,
+        "enterprise_value": 3003755003904.0,
+        "revenue_growth": 0.166,
+        "earnings_growth": 0.748,
+        "gross_margins": 0.50604,
+        "operating_margins": 0.1314,
+        "profit_margins": 0.12224,
+        "free_cashflow": 9806624768.0,
+        "operating_cashflow": 148531003392.0,
+        "total_cash": 143088992256.0,
+        "total_debt": 235540004864.0,
+        "debt_to_equity": 53.3,
+        "forward_pe": 27.443575,
+        "trailing_pe": 31.653803,
+        "peg_ratio": 1.83,
+        "price_to_sales": 3.9194918,
+        "price_to_book": 6.586037,
+        "return_on_equity": 0.24285,
+        "return_on_assets": 0.06845,
+        "recommendation_mean": 1.34848,
+        "number_of_analyst_opinions": 62.0,
+        "current_price": 270.64,
+        "regular_market_price": 270.64,
+        "fifty_two_week_high": 278.56,
+        "fifty_two_week_low": 196.0,
+        "target_mean_price": 312.7934,
+        "target_median_price": 319.5,
+        "short_name": "Amazon.com, Inc.",
+        "long_name": "Amazon.com, Inc.",
+        "sector": "Consumer Cyclical",
+        "industry": "Internet Retail",
+        "currency": "USD",
+        "exchange": "NMS"
+      },
+      "headlines": [
+        {
+          "title": "IPOs are no longer Wall Street's starting line \u2014 they're the exit ramp: Chart of the Day",
+          "publisher": "Yahoo Finance",
+          "link": "https://finance.yahoo.com/markets/article/ipos-are-no-longer-wall-streets-starting-line--theyre-the-exit-ramp-chart-of-the-day-114434009.html",
+          "score": 1.0
+        },
+        {
+          "title": "Greg Abel Just Dumped Amazon Stock. Here Are 5 Reasons to Buy It.",
+          "publisher": "Motley Fool",
+          "link": "https://www.fool.com/investing/2026/05/31/greg-abel-just-dumped-amazon-stock-here-are-5-reas/",
+          "score": 0.0
+        },
+        {
+          "title": "AI Bubble Debate Gets Real as Chip Stocks Rally Turns Historic",
+          "publisher": "Bloomberg",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/ai-bubble-debate-gets-real-130007767.html",
+          "score": 0.333
+        },
+        {
+          "title": "S&P 500 Dividend Yield Hits 1.08%. The Lowest Payout Rate Since the 1800s Is a Retirement Red Flag.",
+          "publisher": "24/7 Wall St.",
+          "link": "https://247wallst.com/personal-finance/2026/05/31/sp-500-dividend-yield-hits-1-08-the-lowest-payout-rate-since-the-1800s-is-a-retirement-red-flag/",
+          "score": 0.0
+        },
+        {
+          "title": "Dow Jones Futures Loom As Trump Makes This Iran Move; Nvidia, Tesla Lead 5 Titans Near Buy Points",
+          "publisher": "Investor's Business Daily",
+          "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-iran-hopes-nvidia-tesla-stocks-near-buy-points/?src=A00220&yptr=yahoo",
           "score": 0.0
         }
       ]
@@ -15752,156 +16052,6 @@
           "publisher": "Barchart",
           "link": "https://www.barchart.com/story/news/2159003/greg-abel-is-trying-to-break-berkshire-hathaways-losing-streak-on-airlines-with-new-delta-stock-bet",
           "score": 0.0
-        }
-      ]
-    },
-    {
-      "ticker": "V",
-      "price": 326.36,
-      "total_score": 58,
-      "quality_score": 42,
-      "valuation_score": 13,
-      "discount_score": 0,
-      "technical_score": 3,
-      "sentiment_score": 0.2,
-      "sentiment_label": "neutral",
-      "rating": "Watch",
-      "action": "Watchlist only",
-      "risk": "Medium-High",
-      "factors": {
-        "quality": {
-          "revenue_growth": {
-            "value": 0.171,
-            "points": 9,
-            "max": 15
-          },
-          "free_cashflow": {
-            "value": 20839749632.0,
-            "points": 10,
-            "max": 10
-          },
-          "gross_margins": {
-            "value": 0.97778,
-            "points": 10,
-            "max": 10
-          },
-          "return_on_equity": {
-            "value": 0.60349,
-            "points": 5,
-            "max": 5
-          },
-          "market_cap": {
-            "value": 620653051904.0,
-            "points": 8,
-            "max": 10
-          }
-        },
-        "valuation": {
-          "peg_ratio": {
-            "value": 1.69,
-            "points": 5,
-            "max": 15
-          },
-          "forward_pe": {
-            "value": 21.975697,
-            "points": 8,
-            "max": 10
-          },
-          "price_to_sales": {
-            "value": 14.424734,
-            "points": 0,
-            "max": 5
-          }
-        },
-        "discount": {
-          "drawdown_52w": {
-            "value": 0.11886141568636628,
-            "points": 0,
-            "max": 15
-          },
-          "drawdown_6m": {
-            "value": 0.08347987089039928,
-            "points": 0,
-            "max": 0
-          }
-        },
-        "technical": {
-          "technical": {
-            "rsi": 60.15749419548084,
-            "macd_stabilizing": false,
-            "above_ema20": true,
-            "not_broken_vs_sma200": true,
-            "rebound_from_3m_low": 0.10664790892388058,
-            "points": 3,
-            "max": 5
-          }
-        }
-      },
-      "fundamentals": {
-        "market_cap": 620653051904.0,
-        "enterprise_value": 625596497920.0,
-        "revenue_growth": 0.171,
-        "earnings_growth": 0.355,
-        "gross_margins": 0.97778,
-        "operating_margins": 0.67346,
-        "profit_margins": 0.51679003,
-        "free_cashflow": 20839749632.0,
-        "operating_cashflow": 22755999744.0,
-        "total_cash": 13912999936.0,
-        "total_debt": 23975999488.0,
-        "debt_to_equity": 67.233,
-        "forward_pe": 21.975697,
-        "trailing_pe": 28.478184,
-        "peg_ratio": 1.69,
-        "price_to_sales": 14.424734,
-        "price_to_book": 16.290306,
-        "return_on_equity": 0.60349,
-        "return_on_assets": 0.19193001,
-        "recommendation_mean": 1.34211,
-        "number_of_analyst_opinions": 35.0,
-        "current_price": 326.36,
-        "regular_market_price": 326.36,
-        "fifty_two_week_high": 375.51,
-        "fifty_two_week_low": 293.89,
-        "target_mean_price": 398.74313,
-        "target_median_price": 400.6,
-        "short_name": "Visa Inc.",
-        "long_name": "Visa Inc.",
-        "sector": "Financial Services",
-        "industry": "Credit Services",
-        "currency": "USD",
-        "exchange": "NYQ"
-      },
-      "headlines": [
-        {
-          "title": "Visa: The Disruption That Never Came",
-          "publisher": "GuruFocus.com",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/visa-disruption-never-came-114244253.html",
-          "score": 0.0
-        },
-        {
-          "title": "American Express vs. Visa: 2 Different Ways to Bet on Premium Consumer Spending",
-          "publisher": "Motley Fool",
-          "link": "https://www.fool.com/investing/2026/05/31/american-express-visa-bet-premium-consumer-spend/",
-          "score": 1.0
-        },
-        {
-          "title": "Visa\u2019s Replit Investment Links AI Agents To Future Commerce Growth",
-          "publisher": "Simply Wall St.",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/visa-replit-investment-links-ai-230332170.html",
-          "score": 1.0
-        },
-        {
-          "title": "Is the Options Market Predicting a Spike in Visa Stock?",
-          "publisher": "Zacks",
-          "link": "https://finance.yahoo.com/markets/options/articles/options-market-predicting-spike-visa-185300878.html",
-          "score": 0.0
-        },
-        {
-          "title": "CBIZ Stock Is Down 60%. Here's What a $21.7 Million Exit Could Mean",
-          "publisher": "Motley Fool",
-          "link": "https://www.fool.com/coverage/filings/2026/05/30/cbiz-stock-is-down-60-here-s-what-a-usd21-7-million-exit-could-mean/",
-          "score": -1.0
         }
       ]
     },
@@ -16663,11 +16813,11 @@
       "valuation_score": 30,
       "discount_score": 15,
       "technical_score": 3,
-      "sentiment_score": -0.6,
+      "sentiment_score": -0.4,
       "sentiment_label": "negative",
-      "rating": "Blocked",
-      "action": "Negative news flow \u2014 manual review required",
-      "risk": "High",
+      "rating": "Watch",
+      "action": "Watchlist only",
+      "risk": "Medium-High",
       "factors": {
         "quality": {
           "revenue_growth": {
@@ -16774,6 +16924,12 @@
       },
       "headlines": [
         {
+          "title": "KKR Strikes A Multibillion-Dollar Deal As Its Industrial Strategy Advances",
+          "publisher": "Insider Monkey",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/kkr-strikes-multibillion-dollar-deal-143916906.html",
+          "score": 1.0
+        },
+        {
           "title": "Highlights: The 5% Debate \u2013 Endowments & Long-Term Investing: 2nd Princeton CorpGov Forum",
           "publisher": "CorpGov.com",
           "link": "https://finance.yahoo.com/markets/stocks/articles/highlights-5-debate-endowments-long-200824516.html",
@@ -16796,12 +16952,6 @@
           "publisher": "Bloomberg",
           "link": "https://finance.yahoo.com/markets/options/articles/hyperscaler-debt-flood-brings-derivatives-190000196.html",
           "score": -1.0
-        },
-        {
-          "title": "KKR Reshapes Portfolio With Exits And Energy Deals In Focus",
-          "publisher": "Simply Wall St.",
-          "link": "https://finance.yahoo.com/sectors/energy/articles/kkr-reshapes-portfolio-exits-energy-071907477.html",
-          "score": 0.0
         }
       ]
     },
@@ -17315,7 +17465,7 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.4881474883719433,
+            "value": 0.48814745667438547,
             "points": 15,
             "max": 15
           },
@@ -17615,7 +17765,7 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.17217060407655244,
+            "value": 0.17217066000760764,
             "points": 5,
             "max": 15
           },
@@ -18602,156 +18752,6 @@
           "publisher": "Barchart",
           "link": "https://www.barchart.com/story/news/2197404/texas-instruments-stock-is-txn-outperforming-the-technology-sector",
           "score": 0.333
-        }
-      ]
-    },
-    {
-      "ticker": "AMZN",
-      "price": 270.64,
-      "total_score": 55,
-      "quality_score": 36,
-      "valuation_score": 15,
-      "discount_score": 0,
-      "technical_score": 4,
-      "sentiment_score": 0.2,
-      "sentiment_label": "neutral",
-      "rating": "Watch",
-      "action": "Watchlist only",
-      "risk": "Medium-High",
-      "factors": {
-        "quality": {
-          "revenue_growth": {
-            "value": 0.166,
-            "points": 9,
-            "max": 15
-          },
-          "free_cashflow": {
-            "value": 9806624768.0,
-            "points": 8,
-            "max": 10
-          },
-          "gross_margins": {
-            "value": 0.50604,
-            "points": 5,
-            "max": 10
-          },
-          "return_on_equity": {
-            "value": 0.24285,
-            "points": 4,
-            "max": 5
-          },
-          "market_cap": {
-            "value": 2911304417280.0,
-            "points": 10,
-            "max": 10
-          }
-        },
-        "valuation": {
-          "peg_ratio": {
-            "value": 1.83,
-            "points": 5,
-            "max": 15
-          },
-          "forward_pe": {
-            "value": 27.443575,
-            "points": 5,
-            "max": 10
-          },
-          "price_to_sales": {
-            "value": 3.9194918,
-            "points": 5,
-            "max": 5
-          }
-        },
-        "discount": {
-          "drawdown_52w": {
-            "value": 0.015818668825836168,
-            "points": 0,
-            "max": 15
-          },
-          "drawdown_6m": {
-            "value": 0.015818668825836168,
-            "points": 0,
-            "max": 0
-          }
-        },
-        "technical": {
-          "technical": {
-            "rsi": 47.86433958936637,
-            "macd_stabilizing": false,
-            "above_ema20": true,
-            "not_broken_vs_sma200": true,
-            "rebound_from_3m_low": 0.3576804435658261,
-            "points": 4,
-            "max": 5
-          }
-        }
-      },
-      "fundamentals": {
-        "market_cap": 2911304417280.0,
-        "enterprise_value": 3003755003904.0,
-        "revenue_growth": 0.166,
-        "earnings_growth": 0.748,
-        "gross_margins": 0.50604,
-        "operating_margins": 0.1314,
-        "profit_margins": 0.12224,
-        "free_cashflow": 9806624768.0,
-        "operating_cashflow": 148531003392.0,
-        "total_cash": 143088992256.0,
-        "total_debt": 235540004864.0,
-        "debt_to_equity": 53.3,
-        "forward_pe": 27.443575,
-        "trailing_pe": 31.653803,
-        "peg_ratio": 1.83,
-        "price_to_sales": 3.9194918,
-        "price_to_book": 6.586037,
-        "return_on_equity": 0.24285,
-        "return_on_assets": 0.06845,
-        "recommendation_mean": 1.34848,
-        "number_of_analyst_opinions": 62.0,
-        "current_price": 270.64,
-        "regular_market_price": 270.64,
-        "fifty_two_week_high": 278.56,
-        "fifty_two_week_low": 196.0,
-        "target_mean_price": 312.7934,
-        "target_median_price": 319.5,
-        "short_name": "Amazon.com, Inc.",
-        "long_name": "Amazon.com, Inc.",
-        "sector": "Consumer Cyclical",
-        "industry": "Internet Retail",
-        "currency": "USD",
-        "exchange": "NMS"
-      },
-      "headlines": [
-        {
-          "title": "IPOs are no longer Wall Street's starting line \u2014 they're the exit ramp: Chart of the Day",
-          "publisher": "Yahoo Finance",
-          "link": "https://finance.yahoo.com/markets/article/ipos-are-no-longer-wall-streets-starting-line--theyre-the-exit-ramp-chart-of-the-day-114434009.html",
-          "score": 1.0
-        },
-        {
-          "title": "Greg Abel Just Dumped Amazon Stock. Here Are 5 Reasons to Buy It.",
-          "publisher": "Motley Fool",
-          "link": "https://www.fool.com/investing/2026/05/31/greg-abel-just-dumped-amazon-stock-here-are-5-reas/",
-          "score": 0.0
-        },
-        {
-          "title": "S&P 500 Dividend Yield Hits 1.08%. The Lowest Payout Rate Since the 1800s Is a Retirement Red Flag.",
-          "publisher": "24/7 Wall St.",
-          "link": "https://247wallst.com/personal-finance/2026/05/31/sp-500-dividend-yield-hits-1-08-the-lowest-payout-rate-since-the-1800s-is-a-retirement-red-flag/",
-          "score": 0.0
-        },
-        {
-          "title": "Dow Jones Futures Loom As Trump Makes This Iran Move; Nvidia, Tesla Lead 5 Titans Near Buy Points",
-          "publisher": "Investor's Business Daily",
-          "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-iran-hopes-nvidia-tesla-stocks-near-buy-points/?src=A00220&yptr=yahoo",
-          "score": 0.0
-        },
-        {
-          "title": "Bank of America Reiterates Buy Rating on Amazon.com (AMZN) Stock",
-          "publisher": "Insider Monkey",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/bank-america-reiterates-buy-rating-120037556.html",
-          "score": 0.0
         }
       ]
     },
@@ -21313,7 +21313,7 @@
       "valuation_score": 10,
       "discount_score": 0,
       "technical_score": 5,
-      "sentiment_score": 0.4667,
+      "sentiment_score": 0.6,
       "sentiment_label": "positive",
       "rating": "Avoid",
       "action": "No action",
@@ -21424,6 +21424,12 @@
       },
       "headlines": [
         {
+          "title": "Applied Materials (AMAT) \u2013 Among the 10 Best Long-Term Dividend Stocks to Invest In According to Billionaires",
+          "publisher": "Insider Monkey",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/applied-materials-amat-among-10-144737834.html",
+          "score": 1.0
+        },
+        {
           "title": "These Artificial Intelligence (AI) Stocks Have Crushed Nvidia in 2026 With Gains of 67% and 121%. They Can Still Soar Higher",
           "publisher": "Motley Fool",
           "link": "https://www.fool.com/investing/2026/05/30/these-artificial-intelligence-ai-stocks-have-crush/",
@@ -21446,12 +21452,6 @@
           "publisher": "Barchart",
           "link": "https://www.barchart.com/story/news/2201213/stock-indexes-rally-to-record-highs-on-peace-deal-hopes-and-ai-spending",
           "score": 1.0
-        },
-        {
-          "title": "Applied Materials (AMAT) Surged Following the Blowout February Earnings Beat",
-          "publisher": "Insider Monkey",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/applied-materials-amat-surged-blowout-133745543.html",
-          "score": 0.333
         }
       ]
     },
@@ -23615,12 +23615,12 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.10349340683401909,
+            "value": 0.10349332156175782,
             "points": 3,
             "max": 15
           },
           "drawdown_6m": {
-            "value": 0.10349340683401909,
+            "value": 0.10349332156175782,
             "points": 0,
             "max": 0
           }
@@ -24724,6 +24724,12 @@
       },
       "headlines": [
         {
+          "title": "AirJoule Technologies (AIRJ) Reaches Key Milestones As Commercial Plans Expand",
+          "publisher": "Insider Monkey",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/airjoule-technologies-airj-reaches-key-143804665.html",
+          "score": 0.0
+        },
+        {
           "title": "GE Vernova Robotech Deal Puts Automation And Valuation In Fresh Focus",
           "publisher": "Simply Wall St.",
           "link": "https://finance.yahoo.com/markets/stocks/articles/ge-vernova-robotech-deal-puts-090610317.html",
@@ -24745,12 +24751,6 @@
           "title": "GE Vernova (GEV) Stock Sinks As Market Gains: What You Should Know",
           "publisher": "Zacks",
           "link": "https://finance.yahoo.com/markets/stocks/articles/ge-vernova-gev-stock-sinks-215002393.html",
-          "score": 0.0
-        },
-        {
-          "title": "Analysts Name Best Picks In Industrials. One Is Topping A Buy Point Today.",
-          "publisher": "Investor's Business Daily",
-          "link": "https://www.investors.com/news/boeing-ge-vernova-united-airlines-industrial-stocks-best-picks/?src=A00220&yptr=yahoo",
           "score": 0.0
         }
       ]
@@ -24965,7 +24965,7 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.12439315427637496,
+            "value": 0.1243930568844206,
             "points": 5,
             "max": 15
           },
@@ -26015,12 +26015,12 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.08977478451320717,
+            "value": 0.08977484432612157,
             "points": 0,
             "max": 15
           },
           "drawdown_6m": {
-            "value": 0.08977478451320717,
+            "value": 0.08977484432612157,
             "points": 0,
             "max": 0
           }
@@ -27515,7 +27515,7 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.240598976918832,
+            "value": 0.24059892553736156,
             "points": 9,
             "max": 15
           },
@@ -27763,7 +27763,7 @@
       "valuation_score": 12,
       "discount_score": 5,
       "technical_score": 1,
-      "sentiment_score": 0.6,
+      "sentiment_score": 0.8,
       "sentiment_label": "positive",
       "rating": "Avoid",
       "action": "No action",
@@ -27874,6 +27874,12 @@
       },
       "headlines": [
         {
+          "title": "KKR Strikes A Multibillion-Dollar Deal As Its Industrial Strategy Advances",
+          "publisher": "Insider Monkey",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/kkr-strikes-multibillion-dollar-deal-143916906.html",
+          "score": 1.0
+        },
+        {
           "title": "5 Strong Buy Passive Income Giants Have Raised Their Dividends by Double Digits for Years",
           "publisher": "24/7 Wall St.",
           "link": "https://247wallst.com/investing/2026/05/26/5-strong-buy-passive-income-giants-have-raised-their-dividend-by-double-digits-for-years/",
@@ -27896,12 +27902,6 @@
           "publisher": "Barchart",
           "link": "https://www.barchart.com/story/news/2087119/are-wall-street-analysts-bullish-on-parker-hannifin-stock",
           "score": 1.0
-        },
-        {
-          "title": "Parker Hannifin Buys Circor Aerospace Business for $2.5 Billion",
-          "publisher": "Barrons.com",
-          "link": "https://www.barrons.com/articles/parker-hannifin-circor-aerospace-acquisition-2c1d24a9?siteid=yhoof2&yptr=yahoo",
-          "score": 0.0
         }
       ]
     },
@@ -32315,7 +32315,7 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.21478603575869895,
+            "value": 0.21478598882208835,
             "points": 9,
             "max": 15
           },
@@ -33763,7 +33763,7 @@
       "valuation_score": 18,
       "discount_score": 5,
       "technical_score": 2,
-      "sentiment_score": 0.0667,
+      "sentiment_score": -0.1333,
       "sentiment_label": "neutral",
       "rating": "Avoid",
       "action": "No action",
@@ -33874,12 +33874,6 @@
       },
       "headlines": [
         {
-          "title": "Is Caterpillar Stock Outperforming the Nasdaq?",
-          "publisher": "Barchart",
-          "link": "https://www.barchart.com/story/news/2217185/is-caterpillar-stock-outperforming-the-nasdaq",
-          "score": 1.0
-        },
-        {
           "title": "Farming Has a Tough Row to Hoe. This Analyst Still Likes Corteva and a Tech Provider.",
           "publisher": "Barrons.com",
           "link": "https://www.barrons.com/articles/ag-farming-stocks-corteva-1d9a3b3a?siteid=yhoof2&yptr=yahoo",
@@ -33902,6 +33896,12 @@
           "publisher": "StockStory",
           "link": "https://finance.yahoo.com/markets/stocks/articles/5-must-read-analyst-questions-073910335.html",
           "score": 0.333
+        },
+        {
+          "title": "Here is What to Know Beyond Why Deere & Company (DE) is a Trending Stock",
+          "publisher": "Zacks",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/know-beyond-why-deere-company-130006623.html",
+          "score": 0.0
         }
       ]
     },
@@ -33965,7 +33965,7 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.06922426544617899,
+            "value": 0.06922420061682821,
             "points": 0,
             "max": 15
           },
@@ -35015,7 +35015,7 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.12907711084533177,
+            "value": 0.129077213378042,
             "points": 5,
             "max": 15
           },
@@ -35915,7 +35915,7 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.139560783780767,
+            "value": 0.13956087542455478,
             "points": 5,
             "max": 15
           },
@@ -39613,7 +39613,7 @@
       "valuation_score": 13,
       "discount_score": 0,
       "technical_score": 2,
-      "sentiment_score": -0.2,
+      "sentiment_score": 0.0,
       "sentiment_label": "neutral",
       "rating": "Avoid",
       "action": "No action",
@@ -39724,6 +39724,12 @@
       },
       "headlines": [
         {
+          "title": "Is NextEra Energy Stock Outperforming the Dow?",
+          "publisher": "Barchart",
+          "link": "https://www.barchart.com/story/news/2221125/is-nextera-energy-stock-outperforming-the-dow",
+          "score": 1.0
+        },
+        {
           "title": "XLU Investors: Watch PJM\u2019s March 2027 Data Center Framework Decision",
           "publisher": "24/7 Wall St.",
           "link": "https://247wallst.com/investing/2026/05/30/xlu-investors-watch-pjms-march-2027-data-center-framework-decision/",
@@ -39746,12 +39752,6 @@
           "publisher": "Simply Wall St.",
           "link": "https://finance.yahoo.com/markets/stocks/articles/look-southern-company-valuation-greener-101210566.html",
           "score": -1.0
-        },
-        {
-          "title": "These 3 Utility Stocks Have Been Paying Dividends for Decades and AI Data Centers Just Made Them More Valuable",
-          "publisher": "24/7 Wall St.",
-          "link": "https://247wallst.com/investing/2026/05/21/these-3-utility-stocks-have-been-paying-dividends-for-decades-and-ai-data-centers-just-made-them-more-valuable/",
-          "score": 0.0
         }
       ]
     },
@@ -39965,12 +39965,12 @@
         },
         "discount": {
           "drawdown_52w": {
-            "value": 0.14029862787709732,
+            "value": 0.14029854815445675,
             "points": 5,
             "max": 15
           },
           "drawdown_6m": {
-            "value": 0.14029862787709732,
+            "value": 0.14029854815445675,
             "points": 0,
             "max": 0
           }
