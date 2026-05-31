@@ -21,6 +21,7 @@ from pathlib import Path
 from config.settings import (
     LOG_DIR,
     MIN_ALERT_SCORE,
+    MIN_DISCOUNT_SCORE,
     SEND_INDIVIDUAL_ALERTS,
     SEND_SUMMARY_ALERT,
     VERSION,
@@ -96,7 +97,11 @@ def run() -> None:
 
     alert_candidates = [
         r for r in results
-        if r.total_score >= MIN_ALERT_SCORE and r.rating not in {"Avoid", "Blocked"}
+        if (
+            r.total_score >= MIN_ALERT_SCORE
+            and r.discount_score >= MIN_DISCOUNT_SCORE
+            and r.rating not in {"Avoid", "Blocked"}
+     )
     ]
 
     if SEND_INDIVIDUAL_ALERTS:
