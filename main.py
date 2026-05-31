@@ -35,6 +35,7 @@ from long_term_fetcher import fetch_long_term_data
 from long_term_notifier import send_long_term_alert, send_long_term_summary
 from long_term_scorer import score_long_term_candidate
 from sentiment_analyzer import analyze_news_sentiment
+from google_sheet_writer import write_scanner_results
 
 
 logging.basicConfig(
@@ -140,6 +141,7 @@ def run() -> None:
 
     results = sorted(results, key=lambda r: r.total_score, reverse=True)
     write_log(results, skipped)
+    write_scanner_results(results)
 
     alert_candidates = filter_and_cap_alerts(results)
 
